@@ -3,7 +3,7 @@
 # OS each tool RUNS ON (so you can scp a whole folder onto a target of that OS).
 #
 # Usage:
-#   ./grab_tools.sh [transfer_dir]
+#   ./transfer.sh ~/oscp/transfer [transfer_dir]
 #   - no arg  -> uses the current directory as the transfer dir
 #   - with arg-> uses (and creates if needed) the given directory
 #
