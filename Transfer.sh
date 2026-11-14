@@ -3,7 +3,7 @@
 # OS each tool RUNS ON (so you can scp a whole folder onto a target of that OS).
 #
 # Usage:
-#   ./transfer.sh [transfer_dir] e.g ./transfer.sh ~/oscp/transfer 
+#   ./grab_tools.sh [transfer_dir]
 #   - no arg  -> uses the current directory as the transfer dir
 #   - with arg-> uses (and creates if needed) the given directory
 #
@@ -60,8 +60,8 @@ echo "[*] linpeas"
 curl -sSfL "https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh" -o linux/linpeas.sh
 chmod +x linux/linpeas.sh
 
-echo "[*] LSE (linux smart enumeration)"
-curl -sSfL "https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh" -o linux/lse.sh
+echo "[*] LSE (linux smart enumeration, CVE-enabled release build)"
+curl -sSfL "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -o linux/lse.sh
 chmod +x linux/lse.sh
 
 echo "[*] linux-exploit-suggester"
